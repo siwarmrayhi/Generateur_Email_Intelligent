@@ -4,7 +4,7 @@ import torch
 from datasets import load_metric
 
 def evaluate_model():
-    print("📊 Évaluation du modèle...")
+    print("Évaluation du modèle...")
     
     # Charger le modèle
     model = GPT2LMHeadModel.from_pretrained('./models/saved_model')
@@ -22,7 +22,7 @@ def evaluate_model():
     predictions = []
     references = []
     
-    print("🧪 Génération sur le test set...")
+    print(" Génération sur le test set...")
     for idx, row in test_df.head(100).iterrows():
         # Extraire le prompt
         prompt = row['full_text'].split('[EMAIL]')[0] + '[EMAIL]'
@@ -57,7 +57,7 @@ def evaluate_model():
         references=references
     )
     
-    print(f"\n✅ Résultats:")
+    print(f"\n Résultats:")
     print(f"   BLEU Score: {bleu_score['bleu']:.4f}")
     
     # Exemples
