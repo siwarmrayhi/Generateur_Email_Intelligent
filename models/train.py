@@ -31,7 +31,7 @@ def train_model():
     print(f"\n  Device: {device}")
     
     if device == "cpu":
-        print("⚠️  WARNING: GPU non disponible!")
+        print("  WARNING: GPU non disponible!")
         return
     
     # Charger le modèle
