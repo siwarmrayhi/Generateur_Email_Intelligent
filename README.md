@@ -200,28 +200,6 @@ La génération utilise l'**échantillonnage** (`temperature=0.7`, `top_p=0.9`, 
 ---
 
 
-
-## 🧪 Exemples de sorties
-
-<details>
-<summary><b>GPT-2 de base vs. fine-tuné (cliquer pour déplier)</b></summary>
-
-**Prompt :** `[CONTEXT] Proposer un rendez-vous [TONE] formel [EMAIL]`
-
-| GPT-2 de base | GPT-2 fine-tuné |
-|---|---|
-| _coller la vraie sortie_ | _coller la vraie sortie_ |
-
-**Prompt :** `[CONTEXT] Remercier un client [TONE] informel [EMAIL]`
-
-| GPT-2 de base | GPT-2 fine-tuné |
-|---|---|
-| _coller la vraie sortie_ | _coller la vraie sortie_ |
-
-</details>
-
----
-
 ## 🚀 Démarrage rapide
 
 ### 1. Installation
