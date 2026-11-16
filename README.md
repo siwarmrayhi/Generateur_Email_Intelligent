@@ -199,45 +199,7 @@ La génération utilise l'**échantillonnage** (`temperature=0.7`, `top_p=0.9`, 
 
 ---
 
-## 📏 Méthodologie d'évaluation
 
-Une seule métrique ne suffit jamais pour la génération de texte ; l'évaluation combine donc plusieurs angles :
-
-| Niveau | Métrique | Ce qu'elle apporte |
-|---|---|---|
-| **Modélisation de langage** | Loss et perplexité (`exp(loss)`) de validation / test | Capacité à prédire des emails jamais vus |
-| **Recouvrement avec les références** | BLEU, ROUGE-1/2/L sur des échantillons générés vs. vrais emails | Similarité de surface (utile pour comparer, limitée pour du texte ouvert) |
-| **Comparaison à une baseline** | GPT-2 de base vs. GPT-2 fine-tuné sur le même jeu de test | Prouve que le fine-tuning a réellement aidé |
-| **Revue qualitative** | Vérification manuelle de la cohérence, de la structure (salutation → corps → formule de politesse) et du respect du ton | Ce que les métriques automatiques ne voient pas |
-
-> ⚠️ BLEU/ROUGE comparent à **un seul** email de référence, alors que plusieurs emails différents peuvent être tout aussi bons pour un même contexte. Ils sont rapportés pour la comparabilité, pas comme mesure de « vérité ».
-
----
-
-## 📊 Résultats
-
-> Remplace les champs ci-dessous par les valeurs produites par `models/evaluate.py` sur ton jeu de test.
-
-| Métrique | GPT-2 de base | GPT-2 fine-tuné |
-|---|---|---|
-| Loss de test | _à renseigner_ | _à renseigner_ |
-| Perplexité ↓ | _à renseigner_ | _à renseigner_ |
-| BLEU ↑ | _à renseigner_ | _à renseigner_ |
-| ROUGE-L ↑ | _à renseigner_ | _à renseigner_ |
-
-**Courbes d'entraînement**
-
-<!-- ![Courbes de loss](assets/loss_curves.png) -->
-
-### Observations clés
-
-> _Écris 3 constats honnêtes après avoir regardé tes résultats, par exemple :_
-
-- La perplexité passe de **X** à **Y** après fine-tuning → le modèle s'adapte au style des emails.
-- Le modèle respecte le ton demandé dans **N** échantillons sur **M** relus manuellement.
-- Cas d'échec typiques : _répétitions / formulations génériques / contexte ignoré_.
-
----
 
 ## 🧪 Exemples de sorties
 
