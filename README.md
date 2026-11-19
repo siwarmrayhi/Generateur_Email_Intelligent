@@ -45,7 +45,7 @@ Un modèle de génération de texte conditionnelle (**GPT-2**) est fine-tuné su
 <div align="center">
 
 <!-- Remplacez VOTRE_LIEN_GOOGLE_DRIVE par le lien de votre vidéo -->
-<a href="VOTRE_LIEN_GOOGLE_DRIVE">
+<a href="https://drive.google.com/file/d/193QENJlO3KjbjWoCfDegnvIwYThCpV0v/view?usp=sharing">
   <img src="./docs/assets/demo.svg" width="100%" alt="Voir la vidéo de démonstration sur Google Drive" />
 </a>
 
